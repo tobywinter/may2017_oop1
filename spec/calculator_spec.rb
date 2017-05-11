@@ -19,6 +19,12 @@ RSpec.describe 'a calculator' do
     expect(subtract(-1, -1)).to eq 0
     expect(subtract(0, Float::INFINITY)).to eq -Float::INFINITY
   end
+
+  it 'prints answer' do
+    expect(print_answer(3)).to eq "Your answer is: 3"
+    expect(print_answer(100)).to eq "Your answer is: 100"
+    expect(print_answer(Float::INFINITY)).to eq "Your answer is: Infinity"
+    expect(print_answer(0)).to eq "Your answer is: 0"
+    expect(print_answer(-1)).to eq "Your answer is: -1"
+  end
 end
-
-

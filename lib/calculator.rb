@@ -5,3 +5,7 @@ end
 def subtract(number, number_to_subtract)
   number - number_to_subtract
 end
+
+def print_answer(number)
+  "Your answer is: #{number}"
+end
